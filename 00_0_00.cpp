@@ -2,13 +2,14 @@
 
 void swap(int* a, int* b)
 {
-    std::cout<<b<<"\n"<<*b<<"\n"<<a<<"\n"<<*a<<std::endl;
-    static int num1 = *b;
-    std::cout<<b<<"\n"<<*b<<"\n"<<a<<"\n"<<*a<<std::endl;
-    static int num2 = *a;
-    std::cout<<b<<"\n"<<*b<<"\n"<<a<<"\n"<<*a<<std::endl;
-    std::cout<<num1<<' '<<num2<<std::endl;
-
+    int* c = a;
+    std::cout<<a<<' '<<b<<' '<<c<<std::endl;
+    a = b;
+    std::cout<<a<<' '<<b<<' '<<c<<std::endl;
+    b = c;
+    std::cout<<a<<' '<<b<<' '<<c<<std::endl;
+    &num1 = b;
+    &num2 = a;
 }
 
 int main(void)
