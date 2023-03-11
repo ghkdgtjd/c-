@@ -2,22 +2,24 @@
 
 void swap(int* a, int* b)
 {
-    int num1 = *b;
-    int num2 = *a;
+    int c = *a;
+    *a = *b;
+    *b = c;
 }
 
 void swap(char* a, char* b)
 {
-    char ch1 = *b;
-    char ch2 = *a;
+    char c = *a;
+    *a = *b;
+    *b = c;
 }
 
 void swap(double* a, double* b)
 {
-    double dbl1 = *b;
-    double dbl2 = *a;
+    double c = *a;
+    *a = *b;
+    *b = c;
 }
-
 
 int main(void)
 {
